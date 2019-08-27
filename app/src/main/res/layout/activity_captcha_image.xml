@@ -65,7 +65,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content" />
 
-        <com.itheima.testconapp.widget.VerificationCodeView
+        <com.it.testconapp.widget.VerificationCodeView
             android:id="@+id/codeView"
             android:layout_width="100dp"
             android:layout_height="40dp"
@@ -74,14 +74,14 @@
 
     </RelativeLayout>
 
-    <com.itheima.testconapp.widget.CodeInput
+    <com.it.testconapp.widget.CodeInput
         android:id="@+id/input_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:codes="6"
         app:hint_text="Pin code" />
 
-    <com.itheima.testconapp.widget.VerificationCodeInput
+    <com.it.testconapp.widget.VerificationCodeInput
         android:id="@+id/ver_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp">
 
-    </com.itheima.testconapp.widget.VerificationCodeInput>
+    </com.it.testconapp.widget.VerificationCodeInput>
 
     <ListView
         android:id="@+id/listview"

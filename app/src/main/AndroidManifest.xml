@@ -24,20 +24,19 @@
         <activity android:name=".views.BannerActivity" />
         <activity android:name=".views.GreenDaoActivity" />
         <activity android:name=".views.CreateOrderActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".views.RelogActivity" />
         <activity android:name=".views.CaptchaImageActivity" />
         <activity android:name=".views.IndicatorActivity" />
         <activity android:name=".views.TreeViewActivity" />
         <activity android:name=".views.MovieActivity" />
-        <activity android:name=".views.WelcomeGuideActivity" />
+        <activity android:name=".views.WelcomeGuideActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".views.MainActivity">
 
         </activity>
@@ -62,11 +61,7 @@
         <activity android:name=".views.MarkWordActivity" />
         <activity android:name=".views.CustomerViewActivity" />
         <activity android:name=".views.DyTimeClockActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

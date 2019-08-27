@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <com.itheima.testconapp.widget.SeatTable
+    <com.it.testconapp.widget.SeatTable
         android:id="@+id/seatView"
         android:background="#ffffff"
         android:layout_width="wrap_content"

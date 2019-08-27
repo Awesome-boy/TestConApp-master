@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.itheima.testconapp.views.CardViewActivity">
+    tools:context="com.it.testconapp.views.CardViewActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_rv"
@@ -12,7 +12,7 @@
         android:padding="10dp"
         android:layout_height="100dp">
     </android.support.v7.widget.RecyclerView>
-    <com.itheima.testconapp.widget.VerificationCodeInput
+    <com.it.testconapp.widget.VerificationCodeInput
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -20,7 +20,7 @@
         android:layout_marginRight="20dp"
         android:layout_centerInParent="true"
         android:visibility="gone"
-        android:gravity="center_vertical"></com.itheima.testconapp.widget.VerificationCodeInput>
+        android:gravity="center_vertical"></com.it.testconapp.widget.VerificationCodeInput>
     <LinearLayout
         android:layout_marginTop="150dp"
         android:layout_width="match_parent"

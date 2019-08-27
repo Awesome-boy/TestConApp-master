@@ -6,7 +6,7 @@
     android:background="@color/bg_color"
     >
 
-    <com.itheima.testconapp.widget.EasyGoToolBar
+    <com.it.testconapp.widget.EasyGoToolBar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         app:navigationIcon="@drawable/icon_back_32px"
         app:title="@string/create_order">
 
-    </com.itheima.testconapp.widget.EasyGoToolBar>
+    </com.it.testconapp.widget.EasyGoToolBar>
 
 
     <ScrollView

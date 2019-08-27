@@ -9,19 +9,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp">
-        <com.itheima.testconapp.widget.PageRecyclerView
+        <com.it.testconapp.widget.PageRecyclerView
             android:id="@+id/cusom_swipe_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </com.itheima.testconapp.widget.PageRecyclerView>
+        </com.it.testconapp.widget.PageRecyclerView>
 
-        <com.itheima.testconapp.widget.PageIndicatorView
+        <com.it.testconapp.widget.PageIndicatorView
             android:id="@+id/indicator"
             android:layout_width="match_parent"
             android:layout_height="12dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="3dp"></com.itheima.testconapp.widget.PageIndicatorView>
+            android:layout_marginBottom="3dp"></com.it.testconapp.widget.PageIndicatorView>
     </RelativeLayout>
 
 

@@ -1,5 +1,6 @@
 package com.it.testconapp.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 
 import com.it.testconapp.R;
 import com.it.testconapp.adpter.GuideViewPagerAdapter;
+import com.it.testconapp.interf.CommonAdapterOnClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +67,12 @@ public class WelcomeGuideActivity extends AppCompatActivity implements ViewPager
         viewpager.setAdapter(adapter);
         //ViewPager切换事件
         viewpager.addOnPageChangeListener(this);
+        adapter.setCommonAdapterOnClickListener(new CommonAdapterOnClickListener() {
+            @Override
+            public void onClick(int id, int position, Object... args) {
+                startActivity(new Intent(WelcomeGuideActivity.this,MainActivity.class));
+            }
+        });
     }
 
     /**

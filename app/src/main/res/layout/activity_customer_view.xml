@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".views.CustomerViewActivity">
-    <com.itheima.testconapp.widget.CounterView
+    <com.it.testconapp.widget.CounterView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"

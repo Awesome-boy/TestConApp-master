@@ -7,11 +7,11 @@
     android:layout_height="match_parent">
 
 
-    <com.itheima.testconapp.widget.MyListView
+    <com.it.testconapp.widget.MyListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.itheima.testconapp.widget.MyListView>
+    </com.it.testconapp.widget.MyListView>
 
 
 </android.support.design.widget.CoordinatorLayout>
