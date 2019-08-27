@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.CaptchaImageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_oval_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/speaker" />
+
+        <com.gongwen.marqueen.SimpleMarqueeView
+            android:id="@+id/marqueeView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inAnimation="@anim/in_right"
+            android:outAnimation="@anim/out_left"
+            app:smvTextColor="@color/white"
+            app:smvTextEllipsize="end"
+            app:smvTextGravity="center_vertical"
+            app:smvTextSingleLine="true"
+            app:smvTextSize="15sp"></com.gongwen.marqueen.SimpleMarqueeView>
+
+    </LinearLayout>
+
+      <test.jinesh.captchaimageviewlib.CaptchaImageView
+        android:id="@+id/captchaImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp" />
+
+     <Button
+        android:id="@+id/bt_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="refresh" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <com.itheima.testconapp.widget.VerificationCodeView
+            android:id="@+id/codeView"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/et_code" />
+
+    </RelativeLayout>
+
+    <com.itheima.testconapp.widget.CodeInput
+        android:id="@+id/input_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:codes="6"
+        app:hint_text="Pin code" />
+
+    <com.itheima.testconapp.widget.VerificationCodeInput
+        android:id="@+id/ver_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+    </com.itheima.testconapp.widget.VerificationCodeInput>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"></ListView>
+
+</LinearLayout>

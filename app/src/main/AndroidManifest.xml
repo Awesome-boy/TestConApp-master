@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.it.testconapp">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.BannerActivity" />
+        <activity android:name=".views.GreenDaoActivity" />
+        <activity android:name=".views.CreateOrderActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".views.RelogActivity" />
+        <activity android:name=".views.CaptchaImageActivity" />
+        <activity android:name=".views.IndicatorActivity" />
+        <activity android:name=".views.TreeViewActivity" />
+        <activity android:name=".views.MovieActivity" />
+        <activity android:name=".views.WelcomeGuideActivity" />
+        <activity android:name=".views.MainActivity">
+
+        </activity>
+        <activity android:name=".views.CardViewActivity" />
+        <activity android:name=".views.SwipListActivity" />
+        <activity android:name=".views.CoordViewActivity" />
+        <activity android:name=".views.BlurActivity" />
+        <activity android:name=".views.NFCActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.nfc.action.TAG_DISCOVERED" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+            <!-- <data android:mimeType="*/*" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".views.OrderInfoActivity" />
+        <activity android:name=".views.TabLayoutActivity" />
+        <activity android:name=".views.MarkWordActivity" />
+        <activity android:name=".views.CustomerViewActivity" />
+        <activity android:name=".views.DyTimeClockActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
